@@ -180,6 +180,18 @@ The interactive Streamlit dashboard (`dashboard.py`) offers 5 main views:
 
 ---
 
+## 📸 Visual Tracking & Detection Results
+
+### Real-Time Player Tracking & Identification (game2.mp4)
+The pipeline detects players across gameplay segments using **YOLOv11 + BotSORT**, assigning persistent track IDs, bounding boxes, and ground-contact anchor points while suppressing broadcast overlay artifacts (reaction boxes and scoreboard):
+
+![Player Tracking & Markers](outputs/screenshots/game2_player_tracking_markers.png)
+
+A sample annotated video clip with full bounding boxes and track ID markers is available at:
+- `outputs/game2_tracked_clip.mp4`
+
+---
+
 ## 🏁 Verification & Results Summary
 
 Run `python src/validate_pipeline.py` to audit pipeline completeness. All stages produce structured, validated CSVs and visual plots ready for downstream analytics.
